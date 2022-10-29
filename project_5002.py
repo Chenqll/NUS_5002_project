@@ -3,7 +3,7 @@ import pandas as pd
 # conda install -n base ipykernel --update-deps --force-reinstall
 
 # %%
-data=pd.read_csv('videos.csv',encoding='utf-8',encoding_errors='ignore')
+data=pd.read_csv('data/videos.csv',encoding='utf-8',encoding_errors='ignore')
 data.head()
 data.dropna(axis=0, how='any', inplace=True)
 
@@ -122,7 +122,7 @@ def train():
             acc=(out.cpu()==labels).sum().item()/len(labels)
             print(i, loss.item(), acc) # 一个batch的数据
 
-for epoch in range(20):
+for epoch in range(500):
     train()
 
 
@@ -140,5 +140,6 @@ def test():
         total += len(labels)
 
     print(correct / total)
+    # 0.7813171080887616
 
 test()
