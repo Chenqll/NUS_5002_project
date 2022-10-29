@@ -28,3 +28,7 @@ identify similar patterns or groups and thereby achieve some actionable insights
 | ARIMA Univariant Times Series model  | Zhao RUdan        |[relevant dataset](https://github.com/Chenqll/NUS_5002_project/blob/main/data/pop_stats.csv)|
 | Classification model for Sentiment Analysis | ChenQiaoLing      |[code](https://github.com/Chenqll/NUS_5002_project/blob/main/project_5002.py)|
 |Clustering model|Lyu Xinyu|[relevant dataset](https://github.com/Chenqll/NUS_5002_project/blob/main/data/comment_keyword_true_tag.csv)|
+
+
+## going todo
+- different model for classification and comparision analysis -- yashina
