@@ -1,18 +1,18 @@
-# %%
+
 import pandas as pd
 # conda install -n base ipykernel --update-deps --force-reinstall
 
-# %%
+
 data=pd.read_csv('data/videos.csv',encoding='utf-8',encoding_errors='ignore')
 data.head()
 data.dropna(axis=0, how='any', inplace=True)
 
 
-# %%
+
 data_SA=data.loc[:,['comments Sentiment','Comment Detail']]
 data_SA
 
-# %%
+
 # 划分数据集
 from sklearn.model_selection import train_test_split
 
@@ -23,7 +23,7 @@ X_train, X_test, y_train, y_test = train_test_split(data_SA['Comment Detail'].va
 
 
 
-# %%
+
 from torch.utils.data import Dataset, DataLoader
 import torch
 
@@ -43,17 +43,17 @@ train_dataset = MyDataset(X_train, y_train)
 test_dataset = MyDataset(X_test, y_test)
 
 
-# %%
-batch_size = 32
+
+batch_size = 16
 train_loader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=False)
-test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=False)
+test_loader = DataLoader(dataset=test_dataset, batch_size=1, shuffle=False)
 # next(iter(train_loader))
 for i, batch in enumerate(train_loader):
     print(batch)
     break
 
 
-# %%
+
 import torch
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -78,8 +78,8 @@ class BertClassificationModel(nn.Module):
         # 读取预训练模型
         self.bert = BertModel.from_pretrained(pretrained_model_name_or_path=model_name)
 
-        for p in self.bert.parameters(): # 冻结bert参数
-                p.requires_grad = False
+        # for p in self.bert.parameters(): # 冻结bert参数
+        #         p.requires_grad = False
         self.fc = nn.Linear(hidden_size, num_class)
 
     def forward(self, batch_sentences): # [batch_size,1]
@@ -105,27 +105,11 @@ loss_func=nn.CrossEntropyLoss()
 loss_func=loss_func.to(device)
 
 
-# %%
-
-def train():
-    model.train()
-    for i,(data,labels) in enumerate(tqdm(train_loader)):
-
-        out=model(data) # [batch_size,num_class]
-        loss=loss_func(out.cpu(),labels)
-        loss.backward()
-        optimizer.step()
-        optimizer.zero_grad()
-
-        if i%5==0:
-            out=out.argmax(dim=-1)
-            acc=(out.cpu()==labels).sum().item()/len(labels)
-            print(i, loss.item(), acc) # 一个batch的数据
-
-for epoch in range(500):
-    train()
-
-
+train_loss=[]
+train_acc=[]
+eval_acc=[]
+best_acc=0
+predict_res=[]
 
 def test():
     model.eval()
@@ -136,10 +120,57 @@ def test():
             out=model(data) # [batch_size,num_class]
 
         out = out.argmax(dim=1)
+        predict_res.append(out.cpu().data.numpy())
         correct += (out.cpu() == labels).sum().item()
         total += len(labels)
 
-    print(correct / total)
-    # 0.7813171080887616
+    rcd_acc=correct/total
+    eval_acc.append(rcd_acc)
 
+
+
+for epoch in range(1):
+    model.train()
+    for i,(data,labels) in enumerate(tqdm(train_loader)):
+
+        out=model(data) # [batch_size,num_class]
+        loss=loss_func(out.cpu(),labels)
+        loss.backward()
+        optimizer.step()
+        optimizer.zero_grad()
+
+
+        out=out.argmax(dim=-1)
+        acc=(out.cpu()==labels).sum().item()/len(labels)
+        print(i, loss.item(), acc) # 一个batch的数据
+
+    train_acc.append(acc)
+    train_loss.append(loss.item())
+from sklearn.metrics import (accuracy_score, roc_auc_score, 
+                             roc_curve, f1_score, confusion_matrix,
+                             classification_report)
 test()
+# print(y_test)
+print(predict_res)
+print(classification_report(y_test, predict_res))
+print(confusion_matrix(y_test, predict_res))
+print(train_acc)
+print(train_loss)
+
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+ 
+
+y = train_loss
+x = range(len(y))
+z= eval_acc
+
+plt.xlabel('epoch')
+plt.ylabel('accuracy')
+
+plt.plot(y,label="train_loss")
+
+plt.plot(z,label='eval_accuracy')
+plt.savefig('./train_base_on_epoch_eval_loss.jpg')
+plt.show()
