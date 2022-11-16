@@ -1,0 +1,1702 @@
+﻿/* JMP 15.2.0 */
+New Project(
+	Run Script(
+		Open(
+			"Entertainment_Pop.jmp",
+			Set Window ID( "8043DF57-F8F5-4030-9334-38682BFEAB25" )
+		);
+		New Window(
+			"Entertainment_Pop.jmp - Time Series of Pop_Score",
+			Set Window ID( "2AAC7655-7C70-49AC-927D-8BE95843FA7B" ),
+			Time Series(
+				X( :Time ),
+				Y( :Pop_Score ),
+				Show Lag Plot( 1 ),
+				ARIMA( 0, 0, 0 ),
+				Seasonal ARIMA( 0, 0, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 1, 1, 1, 12 ),
+				ARIMA( 0, 0, 1 ),
+				Seasonal ARIMA( 0, 0, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 1, 1, 1, 12 ),
+				ARIMA( 0, 0, 2 ),
+				Seasonal ARIMA( 0, 0, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 2, 1, 1, 1, 12 ),
+				ARIMA( 0, 1, 0 ),
+				Seasonal ARIMA( 0, 1, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 1, 1, 1, 12 ),
+				ARIMA( 0, 1, 1 ),
+				Seasonal ARIMA( 0, 1, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 1, 1, 1, 12 ),
+				ARIMA( 0, 1, 2 ),
+				Seasonal ARIMA( 0, 1, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 2, 1, 1, 1, 12 ),
+				ARIMA( 0, 2, 0 ),
+				Seasonal ARIMA( 0, 2, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 2, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 2, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 2, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 2, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 2, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 2, 0, 1, 1, 1, 12 ),
+				ARIMA( 0, 2, 1 ),
+				Seasonal ARIMA( 0, 2, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 2, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 2, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 2, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 2, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 2, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 2, 1, 1, 1, 1, 12 ),
+				ARIMA( 0, 2, 2 ),
+				Seasonal ARIMA( 0, 2, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 2, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 2, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 2, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 2, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 2, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 2, 2, 1, 1, 1, 12 ),
+				ARIMA( 1, 0, 0 ),
+				Seasonal ARIMA( 1, 0, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 1, 1, 1, 12 ),
+				ARIMA( 1, 0, 1 ),
+				Seasonal ARIMA( 1, 0, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 1, 1, 1, 12 ),
+				ARIMA( 1, 0, 2 ),
+				Seasonal ARIMA( 1, 0, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 2, 1, 1, 1, 12 ),
+				ARIMA( 1, 1, 0 ),
+				Seasonal ARIMA( 1, 1, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 1, 1, 1, 12 ),
+				ARIMA( 1, 1, 1 ),
+				Seasonal ARIMA( 1, 1, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 1, 1, 1, 12 ),
+				ARIMA( 1, 1, 2 ),
+				Seasonal ARIMA( 1, 1, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 2, 1, 1, 1, 12 ),
+				ARIMA( 1, 2, 0 ),
+				Seasonal ARIMA( 1, 2, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 2, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 2, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 2, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 2, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 2, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 2, 0, 1, 1, 1, 12 ),
+				ARIMA( 1, 2, 1 ),
+				Seasonal ARIMA( 1, 2, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 2, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 2, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 2, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 2, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 2, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 2, 1, 1, 1, 1, 12 ),
+				ARIMA( 1, 2, 2 ),
+				Seasonal ARIMA( 1, 2, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 2, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 2, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 2, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 2, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 2, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 2, 2, 1, 1, 1, 12 ),
+				ARIMA( 2, 0, 0 ),
+				Seasonal ARIMA( 2, 0, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 0, 1, 1, 1, 12 ),
+				ARIMA( 2, 0, 1 ),
+				Seasonal ARIMA( 2, 0, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 1, 1, 1, 1, 12 ),
+				ARIMA( 2, 0, 2 ),
+				Seasonal ARIMA( 2, 0, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 2, 1, 1, 1, 12 ),
+				ARIMA( 2, 1, 0 ),
+				Seasonal ARIMA( 2, 1, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 0, 1, 1, 1, 12 ),
+				ARIMA( 2, 1, 1 ),
+				Seasonal ARIMA( 2, 1, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 1, 1, 1, 1, 12 ),
+				ARIMA( 2, 1, 2 ),
+				Seasonal ARIMA( 2, 1, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 2, 1, 1, 1, 12 ),
+				ARIMA( 2, 2, 0 ),
+				Seasonal ARIMA( 2, 2, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 2, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 2, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 2, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 2, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 2, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 2, 0, 1, 1, 1, 12 ),
+				ARIMA( 2, 2, 1 ),
+				Seasonal ARIMA( 2, 2, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 2, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 2, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 2, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 2, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 2, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 2, 1, 1, 1, 1, 12 ),
+				ARIMA( 2, 2, 2 ),
+				Seasonal ARIMA( 2, 2, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 2, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 2, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 2, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 2, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 2, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 2, 2, 1, 1, 1, 12 ),
+				Difference( 1, 0, 1 ),
+				Difference( 2, 0, 1 ),
+				Remove Linear Trend,
+				Difference( 1, 1, 12 ),
+				SendToReport(
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model Comparison",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score", "Model Comparison"},
+						"",
+						ScrollBox,
+						{Background Color( 2 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score", "Model Comparison"},
+						"Time Series Model Comparison Table",
+						FrameBox,
+						{Frame Size( 394, 200 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score", "Model Comparison"},
+						"Time Series Model Comparison Table",
+						FrameBox( 2 ),
+						{Frame Size( 197, 100 ),
+						Marker Drawing Mode( "Normal" )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score", "Model Comparison"},
+						"Time Series Model Comparison Table",
+						FrameBox( 3 ),
+						{Frame Size( 197, 100 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARIMA(0, 0, 0)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score",
+						"Model: ARIMA(0, 0, 0)  ", "Forecast"},
+						"Time Series Predicted Graph",
+						FrameBox,
+						{Frame Size( 613, 144 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 0)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 0)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 0)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 0)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 0)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 0)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 0)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: MA(1)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 1)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 1)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 1)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 1)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 1)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 1)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 1)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: MA(2)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 2)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 2)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 2)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 2)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 2)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 2)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 0, 2)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: I(1)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 0)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 0)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 0)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 0)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 0)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 0)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 0)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: IMA(1, 1)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 1)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 1)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 1)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 1)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score",
+						"Model: Seasonal ARIMA(0, 1, 1)(1, 0, 0)12  ",
+						"Forecast"},
+						"Time Series Predicted Graph",
+						FrameBox,
+						{Frame Size( 722, 144 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score",
+						"Model: Seasonal ARIMA(0, 1, 1)(1, 0, 0)12  "
+						},
+						"Residuals",
+						OutlineBox,
+						{Close( 0 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 1)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 1)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 1)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: IMA(1, 2)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 2)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 2)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 2)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 2)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 2)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 2)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 1, 2)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: I(2)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 0)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 0)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 0)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 0)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 0)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 0)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 0)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 1)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 1)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 1)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 1)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 1)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 1)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 1)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: IMA(2, 2)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 2)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 2)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 2)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 2)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 2)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 2)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(0, 2, 2)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: AR(1)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 0)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 0)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 0)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 0)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 0)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 0)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 0)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARMA(1, 1)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 1)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 1)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 1)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 1)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 1)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 1)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 1)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARMA(1, 2)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 2)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 2)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 2)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 2)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 2)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 2)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 0, 2)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARI(1, 1)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 0)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 0)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 0)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 0)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 0)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 0)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 0)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARIMA(1, 1, 1)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score",
+						"Model: ARIMA(1, 1, 1)  ", "Forecast"},
+						"Time Series Predicted Graph",
+						FrameBox,
+						{Frame Size( 522, 144 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score",
+						"Model: ARIMA(1, 1, 1)  "},
+						"Residuals",
+						OutlineBox,
+						{Close( 0 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score",
+						"Model: ARIMA(1, 1, 1)  ", "Residuals"},
+						"Time Series Residual Graph",
+						FrameBox,
+						{Frame Size( 640, 217 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 1)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score",
+						"Model: Seasonal ARIMA(1, 1, 1)(0, 0, 1)12  ",
+						"Forecast"},
+						"Time Series Predicted Graph",
+						FrameBox,
+						{Frame Size( 769, 144 ),
+						Row Legend(
+							Pop_Score,
+							Color( 1 ),
+							Color Theme( "Viridis" ),
+							Marker( 0 ),
+							Marker Theme( "" ),
+							Continuous Scale( 1 ),
+							Reverse Scale( 0 ),
+							Excluded Rows( 0 )
+						)}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 1)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 1)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 1)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 1)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 1)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 1)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARIMA(1, 1, 2)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 2)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 2)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 2)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 2)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 2)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 2)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 1, 2)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARI(1, 2)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 0)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 0)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 0)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 0)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 0)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 0)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 0)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARIMA(1, 2, 1)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 1)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 1)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 1)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 1)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 1)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 1)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARIMA(1, 2, 2)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 2)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 2)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 2)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 2)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 2)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 2)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(1, 2, 2)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: AR(2)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 0)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 0)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 0)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 0)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 0)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 0)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 0)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARMA(2, 1)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 1)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 1)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 1)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 1)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 1)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 1)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 1)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARMA(2, 2)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 2)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 2)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 2)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 2)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 2)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 2)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 0, 2)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARI(2, 1)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 0)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 0)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 0)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 0)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 0)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 0)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 0)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARIMA(2, 1, 1)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 1)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 1)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 1)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 1)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 1)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 1)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 1)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARIMA(2, 1, 2)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 2)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 2)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 2)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score",
+						"Model: Seasonal ARIMA(2, 1, 2)(0, 1, 1)12  ",
+						"Forecast"},
+						"Time Series Predicted Graph",
+						FrameBox,
+						{Frame Size( 836, 144 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score",
+						"Model: Seasonal ARIMA(2, 1, 2)(0, 1, 1)12  "
+						},
+						"Residuals",
+						OutlineBox,
+						{Close( 0 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 2)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 2)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 2)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 1, 2)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARI(2, 2)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 0)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 0)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 0)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 0)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 0)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 0)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 0)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARIMA(2, 2, 1)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 1)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 1)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 1)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 1)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 1)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 1)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 1)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: ARIMA(2, 2, 2)  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 2)(0, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 2)(0, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 2)(0, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 2)(1, 0, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 2)(1, 0, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 2)(1, 1, 0)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Model: Seasonal ARIMA(2, 2, 2)(1, 1, 1)12  ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Difference: (1-B)^1",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Difference: (1-B)^2",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Time Series Pop_Score"},
+						"Difference: (1-B)^1 (1-B^12)^1 ",
+						OutlineBox,
+						{Close( 1 )}
+					)
+				)
+			)
+		) << Set Window Icon( "TimeSeries" );
+		Open(
+			"$DESKTOP/entertainment_predict.jmp",
+			Set Window ID( "C61ABC20-9503-4BF7-8124-8CB71F0E78E1" )
+		);
+	),
+	Set Layout(
+		H Splitter Box(
+			Size( 1215, 657 ),
+			<<Set Sizes( {0.14, 0.86} ),
+			<<Dockable(),
+			V Splitter Box(
+				Size( 170, 657 ),
+				<<Set Sizes( {0.33, 0.33, 0.33} ),
+				<<Dockable(),
+				Tab Page Box(
+					Title( "Window List" ),
+					Window ID( "Window List" )
+				),
+				Tab Page Box(
+					Title( "Bookmarks" ),
+					Window ID( "Bookmarks" )
+				),
+				Tab Page Box(
+					Title( "Recent Files" ),
+					Window ID( "Recent Files" )
+				)
+			),
+			Tab Box(
+				<<Dockable(),
+				Tab Page Box(
+					Title( "Entertainment_Pop" ),
+					Window ID(
+						"8043DF57-F8F5-4030-9334-38682BFEAB25"
+					)
+				),
+				Tab Page Box(
+					Title(
+						"Entertainment_Pop.jmp - Time Series of Pop_Score"
+					),
+					Window ID(
+						"2AAC7655-7C70-49AC-927D-8BE95843FA7B"
+					)
+				),
+				Tab Page Box(
+					Title( "entertainment_predict.jmp" ),
+					Window ID(
+						"C61ABC20-9503-4BF7-8124-8CB71F0E78E1"
+					)
+				)
+			)
+		)
+	)
+)

@@ -1,0 +1,137 @@
+﻿/* JMP 15.2.0 */
+New Project(
+	Run Script(
+		Open(
+			"science_pop.jmp",
+			Set Window ID( "57100C58-C800-4064-90C9-DBC16698EF9B" )
+		);
+		New Window( "science_pop.jmp - Time Series of pop_score",
+			Set Window ID( "C2681618-0008-4CB8-94B4-655F02090EE4" ),
+			Time Series(
+				X( :Time ),
+				Y( :pop_score ),
+				ARIMA( 0, 0, 0 ),
+				Seasonal ARIMA( 0, 0, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 1, 1, 1, 12 ),
+				ARIMA( 0, 0, 1 ),
+				Seasonal ARIMA( 0, 0, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 1, 1, 1, 12 ),
+				ARIMA( 0, 1, 0 ),
+				Seasonal ARIMA( 0, 1, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 1, 1, 1, 12 ),
+				ARIMA( 0, 1, 1 ),
+				Seasonal ARIMA( 0, 1, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 1, 1, 1, 12 ),
+				ARIMA( 1, 0, 0 ),
+				Seasonal ARIMA( 1, 0, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 1, 1, 1, 12 ),
+				ARIMA( 1, 0, 1 ),
+				Seasonal ARIMA( 1, 0, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 1, 1, 1, 12 ),
+				ARIMA( 1, 1, 0 ),
+				Seasonal ARIMA( 1, 1, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 1, 1, 1, 12 ),
+				ARIMA( 1, 1, 1 ),
+				Seasonal ARIMA( 1, 1, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 1, 1, 1, 12 ),
+				SendToReport(
+					Dispatch(
+						{"Model Comparison"},
+						"",
+						ScrollBox,
+						{Background Color( 2 )}
+					),
+					Dispatch(
+						{
+						"Model: Seasonal ARIMA(0, 0, 0)(0, 0, 1)12  "
+						},
+						"Residuals",
+						OutlineBox,
+						{Close( 0 )}
+					)
+				)
+			)
+		) << Set Window Icon( "TimeSeries" );
+	),
+	Set Layout(
+		H Splitter Box(
+			Size( 1215, 657 ),
+			<<Set Sizes( {0.16, 0.84} ),
+			<<Dockable(),
+			V Splitter Box(
+				Size( 194, 657 ),
+				<<Set Sizes( {0.33, 0.33, 0.33} ),
+				<<Dockable(),
+				Tab Page Box(
+					Title( "Window List" ),
+					Window ID( "Window List" )
+				),
+				Tab Page Box(
+					Title( "Bookmarks" ),
+					Window ID( "Bookmarks" )
+				),
+				Tab Page Box(
+					Title( "Recent Files" ),
+					Window ID( "Recent Files" )
+				)
+			),
+			Tab Box(
+				<<Dockable(),
+				Tab Page Box(
+					Title( "science_pop.jmp" ),
+					Window ID(
+						"57100C58-C800-4064-90C9-DBC16698EF9B"
+					)
+				),
+				Tab Page Box(
+					Title(
+						"science_pop.jmp - Time Series of pop_score"
+					),
+					Window ID(
+						"C2681618-0008-4CB8-94B4-655F02090EE4"
+					)
+				)
+			)
+		)
+	)
+)

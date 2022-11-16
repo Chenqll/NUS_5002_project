@@ -1,0 +1,276 @@
+﻿/* JMP 15.2.0 */
+New Project(
+	Run Script(
+		Open(
+			"Technology_Pop_JMP.jmp",
+			Set Window ID( "A5687031-CDBC-4BBE-8D3F-2BE4CFCDF7CA" )
+		);
+		New Window( "Technology_Pop_JMP - Time Series of pop_score",
+			Set Window ID( "C0D546C2-00FB-43C0-A452-4B80DD7D3DAA" ),
+			Time Series(
+				X( :Time ),
+				Y( :pop_score ),
+				Difference( 0, 1, 12 ),
+				ARIMA( 0, 0, 0 ),
+				Seasonal ARIMA( 0, 0, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 0, 1, 1, 1, 12 ),
+				ARIMA( 0, 0, 1 ),
+				Seasonal ARIMA( 0, 0, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 1, 1, 1, 1, 12 ),
+				ARIMA( 0, 0, 2 ),
+				Seasonal ARIMA( 0, 0, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 0, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 0, 2, 1, 1, 1, 12 ),
+				ARIMA( 0, 1, 0 ),
+				Seasonal ARIMA( 0, 1, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 0, 1, 1, 1, 12 ),
+				ARIMA( 0, 1, 1 ),
+				Seasonal ARIMA( 0, 1, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 1, 1, 1, 1, 12 ),
+				ARIMA( 0, 1, 2 ),
+				Seasonal ARIMA( 0, 1, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 0, 1, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 0, 1, 2, 1, 1, 1, 12 ),
+				ARIMA( 1, 0, 0 ),
+				Seasonal ARIMA( 1, 0, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 0, 1, 1, 1, 12 ),
+				ARIMA( 1, 0, 1 ),
+				Seasonal ARIMA( 1, 0, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 1, 1, 1, 1, 12 ),
+				ARIMA( 1, 0, 2 ),
+				Seasonal ARIMA( 1, 0, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 0, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 0, 2, 1, 1, 1, 12 ),
+				ARIMA( 1, 1, 0 ),
+				Seasonal ARIMA( 1, 1, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 0, 1, 1, 1, 12 ),
+				ARIMA( 1, 1, 1 ),
+				Seasonal ARIMA( 1, 1, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 1, 1, 1, 1, 12 ),
+				ARIMA( 1, 1, 2 ),
+				Seasonal ARIMA( 1, 1, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 1, 1, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 1, 1, 2, 1, 1, 1, 12 ),
+				ARIMA( 2, 0, 0 ),
+				Seasonal ARIMA( 2, 0, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 0, 1, 1, 1, 12 ),
+				ARIMA( 2, 0, 1 ),
+				Seasonal ARIMA( 2, 0, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 1, 1, 1, 1, 12 ),
+				ARIMA( 2, 0, 2 ),
+				Seasonal ARIMA( 2, 0, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 0, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 0, 2, 1, 1, 1, 12 ),
+				ARIMA( 2, 1, 0 ),
+				Seasonal ARIMA( 2, 1, 0, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 0, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 0, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 0, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 0, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 0, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 0, 1, 1, 1, 12 ),
+				ARIMA( 2, 1, 1 ),
+				Seasonal ARIMA( 2, 1, 1, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 1, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 1, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 1, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 1, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 1, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 1, 1, 1, 1, 12 ),
+				ARIMA( 2, 1, 2 ),
+				Seasonal ARIMA( 2, 1, 2, 0, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 2, 0, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 2, 0, 1, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 2, 1, 0, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 2, 1, 0, 1, 12 ),
+				Seasonal ARIMA( 2, 1, 2, 1, 1, 0, 12 ),
+				Seasonal ARIMA( 2, 1, 2, 1, 1, 1, 12 ),
+				SendToReport(
+					Dispatch(
+						{"Model Comparison"},
+						"",
+						ScrollBox,
+						{Background Color( 2 )}
+					),
+					Dispatch(
+						{"Model Comparison"},
+						"Time Series Model Comparison Table",
+						FrameBox,
+						{Frame Size( 344, 200 )}
+					),
+					Dispatch(
+						{"Model Comparison"},
+						"Time Series Model Comparison Table",
+						FrameBox( 2 ),
+						{Frame Size( 172, 100 )}
+					),
+					Dispatch(
+						{"Model Comparison"},
+						"Time Series Model Comparison Table",
+						FrameBox( 3 ),
+						{Frame Size( 172, 100 )}
+					),
+					Dispatch(
+						{},
+						"Difference: (1-B^12)^1 ",
+						OutlineBox,
+						{Close( 1 )}
+					),
+					Dispatch(
+						{"Model: ARMA(2, 1)  ", "Forecast"},
+						"1",
+						ScaleBox,
+						{Min( 0 ), Max( 65 ), Inc( 12 ),
+						Minor Ticks( 0 )}
+					),
+					Dispatch(
+						{"Model: ARMA(2, 1)  ", "Forecast"},
+						"Time Series Predicted Graph",
+						FrameBox,
+						{Frame Size( 441, 144 )}
+					),
+					Dispatch(
+						{"Model: ARMA(2, 1)  "},
+						"Residuals",
+						OutlineBox,
+						{Close( 0 )}
+					),
+					Dispatch(
+						{
+						"Model: Seasonal ARIMA(2, 0, 1)(1, 0, 1)12  ",
+						"Forecast"},
+						"1",
+						ScaleBox,
+						{Min( 0 ), Max( 65 ), Inc( 12 ),
+						Minor Ticks( 0 )}
+					),
+					Dispatch(
+						{
+						"Model: Seasonal ARIMA(2, 0, 1)(1, 0, 1)12  ",
+						"Forecast"},
+						"Time Series Predicted Graph",
+						FrameBox,
+						{Frame Size( 854, 144 )}
+					)
+				)
+			)
+		) << Set Window Icon( "TimeSeries" );
+	),
+	Set Layout(
+		H Splitter Box(
+			Size( 1215, 657 ),
+			<<Set Sizes( {0.16, 0.84} ),
+			<<Dockable(),
+			V Splitter Box(
+				Size( 194, 657 ),
+				<<Set Sizes( {0.33, 0.33, 0.33} ),
+				<<Dockable(),
+				Tab Page Box(
+					Title( "Window List" ),
+					Window ID( "Window List" )
+				),
+				Tab Page Box(
+					Title( "Bookmarks" ),
+					Window ID( "Bookmarks" )
+				),
+				Tab Page Box(
+					Title( "Recent Files" ),
+					Window ID( "Recent Files" )
+				)
+			),
+			Tab Box(
+				<<Dockable(),
+				Tab Page Box(
+					Title( "Technology_Pop_JMP 3" ),
+					Window ID(
+						"A5687031-CDBC-4BBE-8D3F-2BE4CFCDF7CA"
+					)
+				),
+				Tab Page Box(
+					Title( "Technology_Pop_JMP 2" ),
+					Window ID(
+						"1C36F386-E900-4624-8886-2780D36655DF"
+					)
+				),
+				Tab Page Box(
+					Title(
+						"Technology_Pop_JMP - Time Series of pop_score"
+					),
+					Window ID(
+						"C0D546C2-00FB-43C0-A452-4B80DD7D3DAA"
+					)
+				)
+			)
+		)
+	)
+)
