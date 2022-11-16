@@ -7,7 +7,7 @@ faced with lots of challenges. This project can deal with the problems of lack o
 ideas, KOL erosion, decentralized investment that BigFame co. faced with. 
 
 ## OverView Of WorkFlow
-[png]('../OverView.png')
+<img title="a title" alt="Alt text" src="https://github.com/Chenqll/NUS_5002_project/blob/main/OverView.png">
 
 ### The purpose of this report are:
 
