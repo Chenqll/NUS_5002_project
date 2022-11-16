@@ -13,6 +13,7 @@ ideas, KOL erosion, decentralized investment that BigFame co. faced with.
 
 ● Make BigFame co. as a powerful differentiator by targeting different groups of viewers and 
 making precise video making decisions.
+
 ● Discover the video popularity trends and make well preparation for the hot category next 
 period 
 
@@ -35,9 +36,14 @@ areas with specific personalities respectively.
 
 ● Contract anchors who can attract an audience interested in gaming, knowledge, music, 
 finance and life according to the company's audience targeting
+
 ● According to different viewers clusters and popular video categories, enlighten the creators 
 to create special video(eg. Entertainment video: more eating, animal, makeup contents)
+
 ● Pay more attention on KOL’s training. Provide them more technical and investment support
+
 ● Save costs by releasing other small anchors in other areas from their contracts
+
 ● By shrinking the business lines, improve other popular categories performance. 
+
 ● By marketing and IP building to increase the reputation
